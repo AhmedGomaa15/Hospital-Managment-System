@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset="utf-8">
+<link rel="stylesheet" href="styles/home.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="navbar">
+    <a href="#home" onclick = "window.location.href='home.html';">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn" onclick = "window.location.href='department.html'" >Department 
+      </button>
+        <div class="dropdown-content">
+          <a href="#">Outpatient department (OPD)</a>
+          <a href="#">Inpatient Service (IP)</a>
+          <a href="#">Medical Department</a>
+          <a href="#">Nursing Department</a>
+          <a href="#">ParaMedical Department</a>
+          <a href="#">Physical Medicine&Rehabilitation Department</a>
+          <a href="#">Operation Theatre Complex Department (OT)</a>
+          <a href="#">Pharmacy Department</a>
+          <a href="#">Radiology Department (X-ray)</a>
+        </div>
+      </div> 
+      <div class="dropdown">
+        <button class="dropbtn">Specilities 
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Clinic</a>
+          <a href="#ourdoctors" onclick = "window.location.href='doctors.html'" >Our Doctors</a>
+          <a href="#timetable" onclick = "window.location.href='timetable.html'">Timetable</a>
+          <a href="#">Reservation</a>
+        </div>
+      </div> 
+      <div class="dropdown">
+        <button class="dropbtn">Patient's info
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Rights</a>
+          <a href="#">Responsibilities</a>
+          <a href="#">Bill of Rights</a>
+          <a href="#">Securing Belongings</a>
+          <a href="#">Parking</a>
+          <a href="#">Smoking Policies</a>
+        </div>
+      </div> 
+      <div class="dropdown">
+        <button class="dropbtn" onclick = "window.location.href='services.html'">Services 
+        </button>
+      </div>
+
+      <button onclick="document.getElementById('id02').style.display='block'" class="loginbtn" style="width:auto;">Resgister</button>
+      <div id="id02" class="modal">
+
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="images/avatar.jpg" alt="Avatar" class="avatar">
+          </div>
+      
+          <form class="box" action="Reflexed Home.html" method="post">
+            <label class="C1" for="fname">First Name</label>
+            <input type="text" placeholder="Your name.." required><br>
+    
+            <label class="C1" for="lname">Last Name</label>
+            <input type="text" placeholder="Your last name.." required><br>
+    
+            <label class="C1" for="email">email</label>
+            <input type="email" placeholder="Your email.." required><br>
+    
+            <label class="C1" for="pwd">Password:</label>
+            <input type="password" id="pwd" name="pwd" placeholder="Your Password" required> <br>
+    
+            <label class="C1" for="gender">Gender</label>
+            <select id="gender" name="gender"><br>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+              <div class="container" style="background-color:#0a9b87">
+            <input type="submit" value="Submit">
+              <button type="button" onclick="document.getElementById('id0').style.display='none'" class="cancelbtn ">Cancel</button>
+              </div>
+            </form>
+      </div>
+
+      <button onclick="document.getElementById('id01').style.display='block'" class="loginbtn" style="width:auto;">Login</button>
+      <div id="id01" class="modal">
+
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="images/avatar.jpg" alt="Avatar" class="avatar">
+          </div>
+      
+          <div class="container">
+            <label class="C1" for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username OR Email Address" name="uname" required><br>
+      
+            <label class="C1" for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+              
+            <button type="submit">Login</button>
+
+          </div>
+      
+          <div class="container" style="background-color:#0a9b87">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw"><a href="#">Forgot password?</a></span>
+          </div>
+        </form>
+      </div>
+
+    </div>
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="images/s1.png" style="width:100%">
+        
+      </div>
+      
+      <div class="mySlides fade">
+          <div class="numbertext"></div>
+       
+          <a href="Make an appoiment.html">
+          
+          <img src="images/s2.png" style="width:100%">
+        </a>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <a href="Departements.html">
+        <img src="images/s3.jpg" style="width:100%">
+      </a>
+        
+      </div>
+      
+      </div>
+      
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+
+      
+<div id="mySidenav" class="sidenav">
+  <a href="#home" onclick = "window.location.href='home.html';" id="Home">Home</a>
+  <a href="#department" onclick = "window.location.href='department.html'" id="Department">Department</a>
+  <a href="#specilities" id="Specilities">Specilities</a>  
+  <a href="#patentsinfo" id="Patientinfo">Patient's info</a>
+    <a href="#services" id="Services" onclick = "window.location.href='services.html'">Services</a>
+</div>
+
+<footer>
+  <div class="footercontainer">
+    <div class="socialIcons"> 
+      <a href=""><i class="fa-brands fa-facebook"></i></a>
+      <a href=""><i class="fa-brands fa-instagram"></i></a>
+      <a href=""><i class="fa-brands fa-twitter"></i></a>
+      <a href=""><i class="fa-brands fa-google-plus"></i></a>
+      <a href=""><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  
+  <div class="footerNav">
+    <ul>
+      <li> <a href="#home" onclick = "window.location.href='home.html';">Home</a></li>
+      <li> <a href="#department" onclick = "window.location.href='department.html'">Department</a></li>      
+      <li> <a href="">Specilities</a></li>
+      <li> <a href="">Patient's info</a></li>
+      <li> <a href="#services" onclick = "window.location.href='services.html'">Services</a></li>
+    </ul>
+  </div>
+  </div>
+  <div class="footerBottom">
+    <p>Copyright &copy; 2002 Designed by <span class="desginer">Gomaa</span></p>
+  </div>
+</footer>
+<script src="js/home.js">
+</script>
+</html>
